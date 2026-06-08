@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xreys Animes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">XR</span><span>Xreys Animes</span></a>
+    <nav class="top-nav" aria-label="Primary">
+      <button class="top-tab active" data-filter="all">Home</button>
+      <button class="top-tab" data-filter="Series">Series</button>
+      <button class="top-tab" data-filter="Movie">Movies</button>
+      <button class="top-tab" data-filter="watching">Watching</button>
+    </nav>
+    <label class="search"><i data-lucide="search"></i><input id="searchInput" type="search" placeholder="Search your library..." /></label>
+  </header>
+
+  <main class="shell">
+    <section class="hero" id="hero">
+      <div class="hero-art"><img class="hero-cover" id="heroCover" src="" alt="" /></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Private anime room</p>
+        <h1 id="heroTitle">Xreys Animes</h1>
+        <p id="heroDescription">A black anime library made for Xreys Animes.</p>
+        <div class="hero-actions">
+          <button class="watch-button" id="watchHero"><i data-lucide="play"></i>Watch now</button>
+          <span class="status-pill" id="heroStatus">10 episodes listed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-area">
+      <section class="library-panel">
+        <div class="section-head"><div><p class="eyebrow">Library</p><h2 id="sectionTitle">Shows</h2></div><span id="resultCount">1 show</span></div>
+        <div class="anime-grid" id="animeGrid"></div>
+        <div class="empty-state" id="emptyState" hidden><i data-lucide="folder-open"></i><h3>No anime added yet</h3><p>Add shows to your library.</p></div>
+      </section>
+      <aside class="watch-panel">
+        <div class="panel-card"><p class="eyebrow">Now watching</p><h3>Azumanga Daioh</h3><p>A surreal school comedy library preview for Xreys Animes.</p></div>
+        <div class="panel-card compact"><span>Public build</span><code>Episode files are not included.</code></div>
+      </aside>
+    </section>
+  </main>
+
+  <dialog class="player-modal" id="playerModal">
+    <div class="modal-top"><div><p id="playerMeta">Episode</p><h2 id="playerTitle">Xreys Animes</h2></div><button class="icon-button" id="closePlayer" aria-label="Close player"><i data-lucide="x"></i></button></div>
+    <div class="video-frame" id="videoFrame"></div>
+    <div class="player-controls">
+      <button class="control-button" id="backSkip" type="button"><i data-lucide="rotate-ccw"></i>10s</button>
+      <button class="control-button" id="forwardSkip" type="button">10s<i data-lucide="rotate-cw"></i></button>
+      <label class="auto-skip"><input id="autoSkipToggle" type="checkbox" /><span>Auto skip intro/outro</span></label>
+    </div>
+    <div class="episode-row" id="episodeRow"></div>
+  </dialog>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
