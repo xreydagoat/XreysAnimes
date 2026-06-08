@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-label="Azumanga Daioh poster">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071513"/>
+      <stop offset="0.48" stop-color="#111"/>
+      <stop offset="1" stop-color="#2b0b0a"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0v60" fill="none" stroke="#ffffff" stroke-opacity=".055" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="720" height="960" fill="url(#bg)"/>
+  <rect width="720" height="960" fill="url(#grid)"/>
+  <circle cx="598" cy="152" r="86" fill="#f0443e" opacity=".92"/>
+  <circle cx="132" cy="748" r="112" fill="#00d8b6" opacity=".18"/>
+  <path d="M90 215h540v360H90z" fill="#0b0b0b" stroke="#00d8b6" stroke-opacity=".5" stroke-width="6"/>
+  <path d="M140 276h292" stroke="#00d8b6" stroke-width="16" stroke-linecap="round"/>
+  <path d="M140 330h430M140 384h354M140 438h245" stroke="#343434" stroke-width="16" stroke-linecap="round"/>
+  <path d="M102 642h516" stroke="#f0443e" stroke-width="24" stroke-linecap="round"/>
+  <text x="76" y="735" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900">AZUMANGA</text>
+  <text x="76" y="813" fill="#00d8b6" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="900">DAIOH</text>
+  <text x="80" y="870" fill="#a7a7a7" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Xreys Animes Library</text>
+</svg>
